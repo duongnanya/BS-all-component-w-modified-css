@@ -1071,31 +1071,6 @@ h6 {
   border-left-color: var(--color-primary);
 }
 
-/* Modify the Heading */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-secondary);
-  color: var(--color-dark);
-  margin-bottom: 0.5rem;
-}
-
-/* Text theme colors */
-.text-primary {
-  color: var(--color-primary) !important;
-}
-
-.text-secondary {
-  color: var(--color-secondary) !important;
-}
-
-.text-primary-light {
-  color: var(--color-primary-light) !important;
-}
-
 /* Modify the toast */
 .toast {
   background-color: var(--color-primary-light);
