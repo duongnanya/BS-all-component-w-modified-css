@@ -400,6 +400,31 @@ a:hover {
   font-style: italic;
 }
 
+/* Modify the Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+/* Text theme colors */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.text-primary-light {
+  color: var(--color-primary-light) !important;
+}
+
 /* Background color utilities */
 .bg-primary {
   background-color: var(--color-primary);
@@ -495,148 +520,6 @@ a:hover {
   filter: none;
 }
 
-/* Modify the Placeholder */
-.placeholder {
-  background-color: var(--color-secondary-light);
-  border-radius: 0.25rem;
-}
-
-.placeholder-glow .placeholder {
-  animation: placeholder-glow 2s ease-in-out infinite;
-}
-
-@keyframes placeholder-glow {
-  50% {
-    opacity: 0.2;
-  }
-}
-
-/* Modify the Progress Bar */
-.progress {
-  background-color: var(--color-gray-200);
-  border-radius: 1rem;
-  height: 1rem;
-  overflow: hidden;
-}
-
-.progress-bar {
-  background-color: var(--color-primary);
-  color: var(--color-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: bold;
-  transition: width 0.6s ease;
-}
-
-/* Modify the Progress Bar Color Variants */
-.progress-bar-secondary {
-  background-color: var(--color-secondary);
-}
-
-.progress-bar-success {
-  background-color: var(--color-success);
-}
-
-.progress-bar-danger {
-  background-color: var(--color-danger);
-}
-
-.progress-bar-warning {
-  background-color: var(--color-warning);
-}
-
-.progress-bar-info {
-  background-color: var(--color-info);
-}
-
-.progress-bar-light {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
-
-.progress-bar-dark {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-
-/* Modify the Striped Progress Bars */
-.progress-bar-striped {
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 1rem 1rem;
-}
-
-/* Modify the Animated Progress Bars */
-.progress-bar-animated {
-  animation: progress-bar-stripes 1s linear infinite;
-}
-
-@keyframes progress-bar-stripes {
-  0% {
-    background-position-x: 1rem;
-  }
-}
-
-/* Modify the Popover Button */
-.btn-primary.custom-popover {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-light);
-}
-
-.btn-primary.custom-popover:hover,
-.btn-primary.custom-popover:focus,
-.btn-primary.custom-popover:active {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  color: var(--color-light);
-}
-
-/* Modify the Popover */
-.popover {
-  border-color: var(--color-primary);
-}
-
-.popover-header {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  border-bottom: none;
-}
-
-.popover-body {
-  color: var(--color-dark);
-}
-
-.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow::after,
-.bs-popover-top > .popover-arrow::after {
-  border-top-color: var(--color-primary);
-}
-
-.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow::after,
-.bs-popover-end > .popover-arrow::after {
-  border-right-color: var(--color-primary);
-}
-
-.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::after,
-.bs-popover-bottom > .popover-arrow::after {
-  border-bottom-color: var(--color-primary);
-}
-
-.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow::after,
-.bs-popover-start > .popover-arrow::after {
-  border-left-color: var(--color-primary);
-}
-
 /* Modify the Accordion */
 .accordion .accordion-item {
   border-color: var(--color-primary-light);
@@ -728,18 +611,6 @@ a:hover {
   border-color: var(--color-gray-800);
 }
 
-/* Modify the Heading */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-secondary);
-  color: var(--color-dark);
-  margin-bottom: 0.5rem;
-}
-
 /* Modify the Badge */
 .badge.bg-primary {
   background-color: var(--color-primary) !important;
@@ -779,6 +650,98 @@ h6 {
 .badge.bg-dark {
   background-color: var(--color-dark) !important;
   color: var(--color-light);
+}
+
+/* Modify the dropdown menu */
+.dropdown-menu {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+
+.dropdown-item {
+  color: var(--color-dark);
+  }
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+/* Modify the list-group */
+.list-group {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.list-group-item {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.list-group-item:not(:last-child) {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.list-group-item.active {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-light);
+}
+
+/* Modify the Navbar */
+.navbar {
+  background-color: var(--color-primary-light) !important;
+  border-radius: 8px;
+}
+
+.navbar-brand {
+  color: var(--color-primary-dark) !important;
+  font-weight: bold;
+}
+
+.nav-pills .nav-link {
+  color: var(--color-primary);
+  border-radius: 20px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: var(--color-primary-light);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Modify the Navs & tabs */
+.alert-custom {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.nav-tabs .nav-link {
+  color: var(--color-dark);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary) var(--color-primary) #fff;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--color-primary-light) var(--color-primary-light)
+    var(--color-primary);
 }
 
 /* Modify the Pagination */
@@ -876,6 +839,133 @@ h6 {
   border-bottom-right-radius: 0.2rem;
 }
 
+/* Modify the Placeholder */
+.placeholder {
+  background-color: var(--color-secondary-light);
+  border-radius: 0.25rem;
+}
+
+.placeholder-glow .placeholder {
+  animation: placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes placeholder-glow {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/* Modify the Progress Bar */
+.progress {
+  background-color: var(--color-gray-200);
+  border-radius: 1rem;
+  height: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  transition: width 0.6s ease;
+}
+
+/* Modify the Progress Bar Color Variants */
+.progress-bar-secondary {
+  background-color: var(--color-secondary);
+}
+
+.progress-bar-success {
+  background-color: var(--color-success);
+}
+
+.progress-bar-danger {
+  background-color: var(--color-danger);
+}
+
+.progress-bar-warning {
+  background-color: var(--color-warning);
+}
+
+.progress-bar-info {
+  background-color: var(--color-info);
+}
+
+.progress-bar-light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.progress-bar-dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+/* Modify the Striped Progress Bars */
+.progress-bar-striped {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+/* Modify the Animated Progress Bars */
+.progress-bar-animated {
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+/* Modify the scrollbar */
+.scrollspy-example {
+  position: relative;
+  height: 350px;
+  overflow-y: scroll;
+  padding: 20px;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.scrollspy-example h4 {
+  color: var(--color-primary);
+  margin-top: 20px;
+}
+
+.scrollspy-example p {
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.scrollspy-example::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollspy-example::-webkit-scrollbar-track {
+  background: var(--color-primary-light);
+}
+
+.scrollspy-example::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  border: 2px solid var(--color-primary-light);
+}
+
 /* Modify the Spinner */
 .spinner-border,
 .spinner-grow {
@@ -931,6 +1021,68 @@ h6 {
   }
 }
 
+/* Modify the Popover Button */
+.btn-primary.custom-popover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.btn-primary.custom-popover:hover,
+.btn-primary.custom-popover:focus,
+.btn-primary.custom-popover:active {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-light);
+}
+
+/* Modify the Popover */
+.popover {
+  border-color: var(--color-primary);
+}
+
+.popover-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-bottom: none;
+}
+
+.popover-body {
+  color: var(--color-dark);
+}
+
+.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow::after,
+.bs-popover-top > .popover-arrow::after {
+  border-top-color: var(--color-primary);
+}
+
+.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow::after,
+.bs-popover-end > .popover-arrow::after {
+  border-right-color: var(--color-primary);
+}
+
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::after,
+.bs-popover-bottom > .popover-arrow::after {
+  border-bottom-color: var(--color-primary);
+}
+
+.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow::after,
+.bs-popover-start > .popover-arrow::after {
+  border-left-color: var(--color-primary);
+}
+
+/* Modify the Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
 /* Text theme colors */
 .text-primary {
   color: var(--color-primary) !important;
@@ -942,133 +1094,6 @@ h6 {
 
 .text-primary-light {
   color: var(--color-primary-light) !important;
-}
-
-/* Modify the Scrollspy */
-.navbar {
-  background-color: var(--color-primary-light) !important;
-  border-radius: 8px;
-}
-
-.navbar-brand {
-  color: var(--color-primary-dark) !important;
-  font-weight: bold;
-}
-
-.nav-pills .nav-link {
-  color: var(--color-primary);
-  border-radius: 20px;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
-.nav-pills .nav-link:hover {
-  background-color: var(--color-primary-light);
-}
-
-.nav-pills .nav-link.active {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.scrollspy-example {
-  position: relative;
-  height: 350px;
-  overflow-y: scroll;
-  padding: 20px;
-  border: 1px solid var(--color-primary-light);
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-.scrollspy-example h4 {
-  color: var(--color-primary);
-  margin-top: 20px;
-}
-
-.scrollspy-example p {
-  color: var(--color-text);
-  line-height: 1.6;
-}
-
-/* Modify the scrollbar */
-.scrollspy-example::-webkit-scrollbar {
-  width: 8px;
-}
-
-.scrollspy-example::-webkit-scrollbar-track {
-  background: var(--color-primary-light);
-}
-
-.scrollspy-example::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  border: 2px solid var(--color-primary-light);
-}
-
-/* Modify the Navs & tabs */
-.alert-custom {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
-  color: var(--color-dark);
-}
-
-.nav-tabs .nav-link {
-  color: var(--color-dark);
-}
-
-.nav-tabs .nav-link.active {
-  color: var(--color-primary-dark);
-  border-color: var(--color-primary) var(--color-primary) #fff;
-}
-
-.nav-tabs .nav-link:hover {
-  border-color: var(--color-primary-light) var(--color-primary-light)
-    var(--color-primary);
-}
-
-/* Modify the list-group */
-.list-group {
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.list-group-item {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
-  color: var(--color-dark);
-  transition: all 0.3s ease;
-}
-
-.list-group-item:hover {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-}
-
-.list-group-item:not(:last-child) {
-  border-bottom: 1px solid var(--color-primary);
-}
-
-.list-group-item.active {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  color: var(--color-light);
-}
-
-/* Modify the dropdown menu */
-.dropdown-menu {
-  background-color: var(--color-primary-light);
-  border-color: var(--color-primary);
-}
-
-.dropdown-item {
-  color: var(--color-dark);
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background-color: var(--color-primary);
-  color: var(--color-light);
 }
 
 /* Modify the toast */
